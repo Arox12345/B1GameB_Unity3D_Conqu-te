@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 7e2d606a7b8b5214d8e88e175799cf4a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Purista
+  fontNames:
+  - Purista
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4198815249a520e48a25fca884ace223, type: 3}
+  - {fileID: 12800000, guid: 13361fc65f0c7e34f96b75f2f0811df0, type: 3}
+  - {fileID: 12800000, guid: 417ead975dbda1244adcff673c08c9e6, type: 3}
+  - {fileID: 12800000, guid: 76ac4f4d2d3f8284aa288dd0ce372ff5, type: 3}
+  - {fileID: 12800000, guid: 60eec4be6c3ec454898f3419b2b3e23c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
