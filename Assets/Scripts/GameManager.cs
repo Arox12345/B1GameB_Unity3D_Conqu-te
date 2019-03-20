@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject PD;
     public GameObject PA;
+    public GameObject Player;
 
     Vector3 PA1 = new Vector3(87, 9, -80);
     Vector3 PA2 = new Vector3(275, 9, -80);
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Instantiate(PD);
+        Instantiate(Player);
         RandomPD();
 
         Instantiate(PA);
@@ -40,15 +42,19 @@ public class GameManager : MonoBehaviour
         {
             case 1:
                 PD.transform.position = PD1;
+                Player.transform.position = PD1;
                 break;
             case 2:
                 PD.transform.position = PD2;
+                Player.transform.position = PD2;
                 break;
             case 3:
                 PD.transform.position = PD3;
+                Player.transform.position = PD3;
                 break;
             case 4:
                 PD.transform.position = PD4;
+                Player.transform.position = PD4;
                 break;
         }
     }
