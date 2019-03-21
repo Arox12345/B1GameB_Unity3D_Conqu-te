@@ -43,7 +43,11 @@ public class HUDCtrl : MonoBehaviour {
             timer1s = 0;
         }
 
-       
+        if(Life <= 0)
+        {
+            Life = 0;
+        }
+
 
         // YANN, BG QUE TU ES, REMPLACE CETTE VARIABLE PAR LA VARIABLE DE LA VIE DU JOUEUR -- LIFE --
         // ON AS AUSSI LE TEMPS RESTANT -- TIMELEFT --

@@ -10,6 +10,8 @@ public class PlayerCtrl : MonoBehaviour
     public float deceleration = 0.001f;
     Vector3 m_angleVelocity;
     private Rigidbody rb;
+    int score = 0;
+    public GameObject life;
 
     // Use this for initialization
     void Start ()
@@ -48,6 +50,9 @@ public class PlayerCtrl : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        score += 100;
+        life.GetComponent<HUDCtrl>().Life -= 4;
+
         if (collision.gameObject.tag == "Eau")
         {
             speed = 10f;

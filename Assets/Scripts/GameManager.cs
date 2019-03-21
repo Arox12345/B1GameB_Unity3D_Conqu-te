@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Instantiate(PD);
-        Instantiate(Player);
         RandomPD();
 
         Instantiate(PA);
