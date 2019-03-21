@@ -28,6 +28,11 @@ public class PlayerCtrl : MonoBehaviour
         VerticalMove();
         RotationMove();
         speed -= deceleration;
+
+        if(speed <= 0)
+        {
+            speed = 0;
+        }
     }
 
     public void BasicMove()
