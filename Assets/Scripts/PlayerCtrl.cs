@@ -48,9 +48,29 @@ public class PlayerCtrl : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Plane")
+        if (collision.gameObject.tag == "Eau")
         {
-            speed = 40f;
+            speed = 10f;
+        }
+
+        if (collision.gameObject.tag == "Béton")
+        {
+            speed = 15f;
+        }
+
+        if (collision.gameObject.tag == "Bitume")
+        {
+            speed = 20f;
+        }
+
+        if (collision.gameObject.tag == "Plante")
+        {
+            speed = 25f;
+        }
+
+        if (collision.gameObject.tag == "Métal")
+        {
+            speed = 30f;
         }
     }
 
