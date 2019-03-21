@@ -81,17 +81,9 @@ public class PlayerCtrl : MonoBehaviour
 
     public void RotationMove()
     {
-        if (Input.GetKey(KeyCode.Q))
-        {
-            Quaternion deltaRotation = Quaternion.Euler(-m_angleVelocity * Time.deltaTime);
-            rb.MoveRotation(rb.rotation * deltaRotation);
-        }
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            Quaternion deltaRotation = Quaternion.Euler(m_angleVelocity * Time.deltaTime);
-            rb.MoveRotation(rb.rotation * deltaRotation);
-        }
+        this.transform.Translate(Input.GetAxis("Horizontal")*2, 0, 0);
+
     }
 
     public void cGravity()
