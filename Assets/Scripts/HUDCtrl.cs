@@ -16,12 +16,9 @@ public class HUDCtrl : MonoBehaviour {
 
     float timermax;
 
-    // ZONE TEMPORAIRE. A SUPPR LORS DE L'IMPLÉMENTATION !!
-
     public int timer = 30;
     int timer1s = 0;
 
-    // FIN DE LA ZONE TEMPORAIRE....
 
     // Use this for initialization
     void Start () {
@@ -39,8 +36,6 @@ public class HUDCtrl : MonoBehaviour {
         TimeLeftImgLeft.fillAmount = (timer / timermax) * 1;
         TimeLeftImgRight.fillAmount = (timer / timermax) * 1;
 
-        // ZONE TEMPORAIRE. A SUPPR LORS DE L'IMPLÉMENTATION !!
-
         timer1s += 1;
         if (timer1s >= 60)
         {
@@ -48,7 +43,7 @@ public class HUDCtrl : MonoBehaviour {
             timer1s = 0;
         }
 
-        // FIN DE LA ZONE TEMPORAIRE....
+       
 
         // YANN, BG QUE TU ES, REMPLACE CETTE VARIABLE PAR LA VARIABLE DE LA VIE DU JOUEUR -- LIFE --
         // ON AS AUSSI LE TEMPS RESTANT -- TIMELEFT --
