@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
 
     private Vector3 doll;
     private Vector3 doll2;
+    private Vector3 refWorld = new Vector3(0,0,0);
+
+
 
     Vector3 PA1 = new Vector3(266, 14, 387);
     Vector3 PA2 = new Vector3(8, 14, 78);
@@ -40,11 +43,10 @@ public class GameManager : MonoBehaviour
         Dolly.transform.GetComponent<CinemachineSmoothPath>().m_Waypoints[0].position = doll;
         Dolly.transform.GetComponent<CinemachineSmoothPath>().m_Waypoints[2].position = doll2;
 
-
-
-        Dolly.transform.GetComponent<CinemachineSmoothPath>().m_Waypoints[1].position = doll - doll2;
-
-        Dolly.transform.GetComponent<CinemachineSmoothPath>().m_Waypoints[1].position.y = 90;
+       
+       // if(doll2 )
+        Dolly.transform.GetComponent<CinemachineSmoothPath>().m_Waypoints[1].position.x = doll2.y - doll.y;
+        Dolly.transform.GetComponent<CinemachineSmoothPath>().m_Waypoints[1].position.y = 100;
     }
 
     // Update is called once per frame
@@ -62,21 +64,37 @@ public class GameManager : MonoBehaviour
                 PD.transform.position = PD1;
                 Player.transform.position = PD1;
                 doll2 = PD1;
+
+                Debug.Log("positionpointPD " + PD.transform.position);
+                Debug.Log("Player " + PD.transform.position);
+                Debug.Log("Positionpété x:" + doll2.x + " y: " + doll2.y + " z:" + doll2.z);
                 break;
             case 2:
                 PD.transform.position = PD2;
                 Player.transform.position = PD2;
                 doll2 = PD2;
+
+                Debug.Log("positionpointPD " + PD.transform.position);
+                Debug.Log("Player " + PD.transform.position);
+                Debug.Log("Positionpété x:" + doll2.x + " y: " + doll2.y + " z:" + doll2.z);
                 break;
             case 3:
                 PD.transform.position = PD3;
                 Player.transform.position = PD3;
                 doll2 = PD3;
+
+                Debug.Log("positionpointPD " + PD.transform.position);
+                Debug.Log("Player " + PD.transform.position);
+                Debug.Log("Positionpété x:" + doll2.x + " y: " + doll2.y + " z:" + doll2.z);
                 break;
             case 4:
                 PD.transform.position = PD4;
                 Player.transform.position = PD4;
                 doll2 = PD4;
+
+                Debug.Log("positionpointPD " + PD.transform.position);
+                Debug.Log("Player " + PD.transform.position);
+                Debug.Log("Positionpété x:" + doll2.x + " y: " + doll2.y + " z:" + doll2.z);
                 break;
         }
     }
@@ -89,18 +107,30 @@ public class GameManager : MonoBehaviour
             case 1:
                 PA.transform.position = PA1;
                 doll = PA1;
+
+                Debug.Log("positionpointPA " + PA.transform.position);
+                Debug.Log("Positionpété x:" + doll.x + " y: " + doll.y + " z: " + doll.z);
                 break;
             case 2:
                 PA.transform.position = PA2;
                 doll = PA2;
+
+                Debug.Log("positionpointPA " + PA.transform.position);
+                Debug.Log("Positionpété x:" + doll.x + " y: " + doll.y + " z: " + doll.z);
                 break;
             case 3:
                 PA.transform.position = PA3;
                 doll = PA3;
+
+                Debug.Log("positionpointPA " + PA.transform.position);
+                Debug.Log("Positionpété x:" + doll.x + " y: " + doll.y + " z: " + doll.z);
                 break;
             case 4:
                 PA.transform.position = PA4;
                 doll = PA4;
+
+                Debug.Log("positionpointPA " + PA.transform.position);
+                Debug.Log("Positionpété x:" + doll.x + " y: " + doll.y + " z: " + doll.z);
                 break;
         }
     }
