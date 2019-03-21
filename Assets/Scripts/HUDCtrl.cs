@@ -14,6 +14,8 @@ public class HUDCtrl : MonoBehaviour {
     public Image TimeLeftImgLeft;
     public Image TimeLeftImgRight;
 
+    public GameObject pl;
+
     float timermax;
 
     public int timer = 30;
@@ -46,6 +48,8 @@ public class HUDCtrl : MonoBehaviour {
         if(Life <= 0)
         {
             Life = 0;
+
+            pl.SetActive(false);
         }
 
 
