@@ -60,7 +60,17 @@ public class PlayerCtrl : MonoBehaviour
 
         if (collision.gameObject.tag == "Eau")
         {
-            speed = 10f;
+            speed = 12f;
+        }
+
+        if (collision.gameObject.tag == "Carton" || collision.gameObject.tag == "Coutchouc" || collision.gameObject.tag == "Papier" || collision.gameObject.tag == "Paille" || collision.gameObject.tag == "Fumée" || collision.gameObject.tag == "Verre" || collision.gameObject.tag == "Plastique")
+        {
+            speed = 13f;
+        }
+
+        if (collision.gameObject.tag == "Terre")
+        {
+            speed = 14.5f;
         }
 
         if (collision.gameObject.tag == "Béton")
@@ -70,17 +80,42 @@ public class PlayerCtrl : MonoBehaviour
 
         if (collision.gameObject.tag == "Bitume")
         {
-            speed = 20f;
+            speed = 15f;
         }
 
         if (collision.gameObject.tag == "Plante")
         {
-            speed = 25f;
+            speed = 15.5f;
+        }
+
+        if (collision.gameObject.tag == "Bois")
+        {
+            speed = 15.5f;
         }
 
         if (collision.gameObject.tag == "Métal")
         {
-            speed = 30f;
+            speed = 18f;
+        }
+
+        if (collision.gameObject.tag == "Roche")
+        {
+            speed = 19f;
+        }
+
+        if (collision.gameObject.tag == "Sable")
+        {
+            speed = 5f;
+        }
+
+        if (collision.gameObject.tag == "Neige")
+        {
+            speed = 9f;
+        }
+
+        if (collision.gameObject.tag == "Diamant")
+        {
+            speed = 20f;
         }
     }
 
