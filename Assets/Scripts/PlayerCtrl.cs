@@ -16,6 +16,7 @@ public class PlayerCtrl : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
+        life = GameObject.Find("Health");
         m_angleVelocity = new Vector3(0, 100, 0);
         rb = GetComponent<Rigidbody>();
     }
