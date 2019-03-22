@@ -55,67 +55,79 @@ public class PlayerCtrl : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        score += 100;
+        
         life.GetComponent<HUDCtrl>().Life -= 4;
 
         if (collision.gameObject.tag == "Eau")
         {
             speed = 12f;
+            score += 100;
         }
 
         if (collision.gameObject.tag == "Carton" || collision.gameObject.tag == "Coutchouc" || collision.gameObject.tag == "Papier" || collision.gameObject.tag == "Paille" || collision.gameObject.tag == "Fumée" || collision.gameObject.tag == "Verre" || collision.gameObject.tag == "Plastique")
         {
             speed = 13f;
+            score += 50;
         }
 
         if (collision.gameObject.tag == "Terre")
         {
             speed = 14.5f;
+            score += 20;
         }
 
         if (collision.gameObject.tag == "Béton")
         {
             speed = 15f;
+            score += 10;
         }
 
         if (collision.gameObject.tag == "Bitume")
         {
             speed = 15f;
+            score += 10;
         }
 
         if (collision.gameObject.tag == "Plante")
         {
             speed = 15.5f;
+            score += 100;
         }
 
         if (collision.gameObject.tag == "Bois")
         {
             speed = 15.5f;
+            score += 30;
         }
 
         if (collision.gameObject.tag == "Métal")
         {
             speed = 18f;
+            score += 20;
         }
 
         if (collision.gameObject.tag == "Roche")
         {
             speed = 19f;
+            score += 100;
         }
 
         if (collision.gameObject.tag == "Sable")
         {
             speed = 5f;
+            score += 10;
         }
 
         if (collision.gameObject.tag == "Neige")
         {
             speed = 9f;
+            score += 100;
         }
 
         if (collision.gameObject.tag == "Diamant")
         {
             speed = 20f;
+            score += 1000;
         }
     }
 

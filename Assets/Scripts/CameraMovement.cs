@@ -18,7 +18,7 @@ public class CameraMovement : MonoBehaviour {
 	void Update ()
     {
 
-        playerPrefabs = GameObject.Find("Player(Clone");
+        playerPrefabs = GameObject.Find("Player(Clone)");
 
       
         Vector3 popo = playerPrefabs.transform.position;
