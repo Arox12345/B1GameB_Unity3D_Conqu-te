@@ -16,12 +16,12 @@ public class HUDCtrl : MonoBehaviour {
 
     float timermax;
 
-    // ZONE TEMPORAIRE. A SUPPR LORS DE L'IMPLÉMENTATION !!
+   
 
     public int timer = 30;
     int timer1s = 0;
 
-    // FIN DE LA ZONE TEMPORAIRE....
+  
 
     // Use this for initialization
     void Start () {

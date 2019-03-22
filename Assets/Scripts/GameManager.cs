@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     public GameObject Dolly;
 
     public GameObject Pause;
-  
+    public GameObject HUD;
+
 
 
     Vector3 PA1 = new Vector3(266, 14, 387);
@@ -48,7 +49,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
 
+        HUD.SetActive(true);
+
+    }
 
 
     void RandomPD()
