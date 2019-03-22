@@ -34,6 +34,11 @@ public class MainMenuCtrl : MonoBehaviour {
     public Animator CreditAnim;
     bool CreditLaunched = false;
 
+
+    public GameObject CameraStartParent;
+
+
+
     // Use this for initialization
     void Start () {
         NoLeaveGame();
@@ -51,9 +56,23 @@ public class MainMenuCtrl : MonoBehaviour {
             {
                 Debug.Log("2");
                 StopCredit();
+
+               
             }
         }
+        
+          
     }
+
+
+    private void OnDisable()
+    {
+        CameraStartParent.SetActive(true);
+        
+    }
+
+
+
 
     public void StopCredit()
     {
