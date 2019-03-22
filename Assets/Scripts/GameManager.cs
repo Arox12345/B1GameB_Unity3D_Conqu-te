@@ -31,13 +31,11 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Instantiate(PD);
+        Instantiate(Player);
         RandomPD();
 
         Instantiate(PA);
         RandomPA();
-
-
-
 
         Dolly.transform.GetComponent<CinemachineSmoothPath>().m_Waypoints[0].position = doll;
         Dolly.transform.GetComponent<CinemachineSmoothPath>().m_Waypoints[2].position = doll2;

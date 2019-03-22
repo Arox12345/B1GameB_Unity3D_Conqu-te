@@ -11,14 +11,14 @@ public class CameraMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        playerPrefabs = GameObject.Find("Player");
+        playerPrefabs = GameObject.Find("Player(Clone)");
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
 
-        playerPrefabs = GameObject.Find("Player");
+        playerPrefabs = GameObject.Find("Player(Clone");
 
       
         Vector3 popo = playerPrefabs.transform.position;
